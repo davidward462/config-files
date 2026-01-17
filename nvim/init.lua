@@ -19,7 +19,7 @@ vim.opt.scrolloff = 10                             -- Keep 10 lines above/below 
 vim.opt.sidescrolloff = 8                          -- Keep 8 columns left/right of cursor
 
 -- Indentation for Python
-vim.g.python_recommended_style = 0
+vim.g.python_recommended_style = 0                -- Don't use the default Python indentation style
 
 -- Indentation
 vim.opt.tabstop = 8                                -- Tab width
