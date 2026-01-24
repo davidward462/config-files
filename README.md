@@ -7,3 +7,7 @@ You will need to manually copy files over to their required locations if you clo
 ## nvim/init.lua
 Based on https://github.com/radleylewis/nvim-lite/blob/master/init.lua
 Generally needs to be stored in ~/.config/nvim
+
+## vimrc
+This would be named .vimrc (hidden file) in a system. It contains some simple and useful settings for vim (or neovim). 
+Usually would be stored in the home directory.
