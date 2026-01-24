@@ -1,0 +1,58 @@
+set nocompatible " set as not compatible with vi
+set hlsearch " hightlight search pattern matches
+set incsearch " show match for search pattern while typing it
+
+set ruler " show cursor position on lower right corner 
+set showcmd " show incomplete command
+
+set history=200 " command history length
+
+" detect filetype and use corresponding indentation and highlighting
+filetype plugin indent on
+
+" Enable 256 colors option
+set t_Co=256
+
+" display character metadata
+" set list
+
+" Don't use python style for .py files.
+" Specifically allow tab sizes to be changed as below.
+let g:python_recommended_style = 0
+
+" set tab width to 8 spaces
+set tabstop=8 " tab is the width of 8 spaces
+set softtabstop=0
+set shiftwidth=8
+set expandtab " expand tabs to become the designated number of spaces
+
+set autoindent " maintain indentation from previous line
+
+" use tabs on makefiles
+autocmd FileType make setlocal noexpandtab
+
+syntax on " syntax highlighting
+set fileformat=unix " line endings
+
+" Colors
+" colorscheme vim
+set notermguicolors
+" set bg=dark
+
+" Set relative line numbers except current line
+set number
+set relativenumber
+
+" Enable autocomplete (Ctrl-n)
+set wildmode=longest,list,full
+
+" Set split window to be on the right
+set splitbelow splitright
+
+set cursorline " Allow the line the cursor is on to be highlighted
+
+" Highlight current line in Grey7 (233)
+highlight CursorLine ctermfg=NONE ctermbg=233 cterm=NONE
+
+" Highlight current line number in light blue (074)
+highlight CursorLineNr ctermfg=black ctermbg=074 cterm=NONE
